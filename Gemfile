@@ -37,6 +37,7 @@ gem 'jquery-rails'
 # gem 'capistrano-rails', group: :development
 gem 'sendgrid-ruby'
 gem 'dotenv-rails'
+gem 'pg'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
