@@ -1,0 +1,17 @@
+//@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+table {
+  td {
+    border: 1px solid #dee2e6;
+  }
+}
+
+input {
+  display: block;
+  padding-top: 10px;
+}
+
+.btn {
+  border: 1px solid #333333;
+}

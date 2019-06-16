@@ -1,0 +1,7 @@
+<div class="container">
+  <%= simple_form_for @official_document, { multipart: true } do |f| %>
+    <%= email_field_tag 'email' %>
+    <%= f.file_field :metadata, multiple: true %>
+    <%= f.button :submit %>
+  <% end %>
+</div>

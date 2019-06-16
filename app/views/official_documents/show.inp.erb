@@ -1,0 +1,7 @@
+<%- @official_document.metadata.values.each do |x| -%>
+<%= x['name'].delete_prefix('"').delete_suffix('"') %>  =  <%= x['type'] %>
+<%- x['data'].each do |key, value| -%>
+  <%= key.delete_prefix('"').delete_suffix('"') %> = <%= value.delete_prefix('"').delete_suffix('"') %>
+<%- end -%>
+  ..
+<%- end -%>

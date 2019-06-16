@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Object Name</th>
+          <th>Object Type</th>
+          <th>Property</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <%- @official_document.metadata.values.each do |x| -%>
+          <tr>
+            <td><%= x['name'] %></td>
+            <td><%= x['type'] %></td>
+            <td>
+              <table class="table table-core">
+                <tbody>
+                  <%- x['data'].each do |key, value| -%>
+                    <tr>
+                      <td><%= key %></td>
+                      <td><%= value %></td>
+                    </tr>
+                  <%- end -%>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        <%- end -%>
+      </tbody>
+    </table>
+  </div>
+</div>
+

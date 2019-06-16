@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div>
+      <% if @official_documents.present? %>
+        <% @official_documents.each do |document| %>
+          <p> Document ID: <%= link_to document.id, official_document_path(document) %></p>
+        <% end %>
+      <% else %>
+        <h3>There is no document available at this moment</h3>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row">
+    <%= link_to 'Create New', new_official_document_path %>
+  </div>
+</div>
